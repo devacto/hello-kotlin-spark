@@ -4,14 +4,14 @@ plugins {
 }
 
 application {
-    mainClassName = "codes.victor.kafka.connect.GraphQLServerKt"
+    mainClassName = "sample.ProcessorKt"
 }
 
 dependencies {
     compile(kotlin("stdlib"))
-    compile(group = "org.apache.kafka", name = "connect-api", version = "2.0.0")
+    compile(group = "org.apache.spark", name = "spark-core_2.11", version = "2.4.0")
+    compile(group = "org.apache.spark", name = "spark-sql_2.11", version = "2.4.0")
     compile(group = "org.slf4j", name = "slf4j-log4j12", version = "1.7.25")
-    compile(group = "com.mashape.unirest", name = "unirest-java", version = "1.4.9")
 }
 
 repositories {
